@@ -10,7 +10,7 @@ from typing import Callable
 
 import duckdb
 
-from import bronze
+import bronze
 import gold
 import quality
 import silver
