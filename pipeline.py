@@ -10,7 +10,10 @@ from typing import Callable
 
 import duckdb
 
-from import bronze, gold, quality, silver
+from import bronze
+import gold
+import quality
+import silver
 
 
 class PipelineFailed(RuntimeError):
