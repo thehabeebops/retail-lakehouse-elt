@@ -1,0 +1,20 @@
+[project]
+name = "retail-lakehouse-elt"
+version = "0.1.0"
+description = "Medallion-architecture ELT pipeline on DuckDB and Parquet, with SCD2, data contracts and quality gates"
+requires-python = ">=3.10"
+dependencies = ["duckdb>=1.0"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+lakehouse = ["sql/marts/*.sql"]

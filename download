@@ -1,0 +1,6 @@
+lake/
+demo_big/
+big.json
+__pycache__/
+.pytest_cache/
+*.egg-info/
