@@ -3,9 +3,9 @@ import shutil
 import duckdb
 import pytest
 
-from lakehouse.generate import generate
-from lakehouse.pipeline import run
-from lakehouse.quality import run_checks
+from generate import generate
+from pipeline import run
+from quality import run_checks
 
 DAYS = dict(days=12, customers=300, orders_per_day=200, seed=7)  # long enough to trigger both schema drifts
 
